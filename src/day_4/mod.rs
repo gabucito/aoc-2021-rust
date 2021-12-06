@@ -149,7 +149,6 @@ pub fn part2(contents: &str) -> u32 {
     }
 
     if let Some(board) = last_board {
-        let total = board.get_sum();
         return board.get_sum()
     }
 
