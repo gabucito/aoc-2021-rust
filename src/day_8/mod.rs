@@ -49,7 +49,7 @@ fn get_line_number(contents: &str) -> usize {
             5 => {
                 // can be 2, 3 or 5
 
-                // to get 2, compare it with 4's string
+                // to get 2, compare it with 4's string (substract 4's string to the current string)
                 // it should have 3 more char
 
                 // to get 3, compare it with 7's string
@@ -71,11 +71,11 @@ fn get_line_number(contents: &str) -> usize {
             6 => {
                 // can be 0, 6, 9
 
-                // to get 6, compare it with 7's string
-                // if there is only 4 char that is different then it is 6
+                // to get 6, compare it with 7's string (substract 7's string to the current string)
+                // if there 4 char are left then 6
 
                 // to get 9, compare it with 4's string
-                // 9 should have only 2 characters more than 4
+                // 9 should have only 2
 
                 // to get 0, first get 6 and 9 and if it is not either then it is 0
 
