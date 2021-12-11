@@ -26,7 +26,7 @@ fn part2(contents: &str) -> u32 {
     let mut matrix = Matrix::new(contents);
     for step in 1..1000 {
         matrix.step();
-        let total = matrix.data.iter().fold(0, |total: u32, &num| total + num as u32);
+        let total = matrix.data.iter().sum::<u8>();
         if total == 0 {
             return step;
         }
